@@ -16,8 +16,10 @@ public class CharacterInfo extends CharacterAbility {
         warlord.skill();
         System.out.println();
         info.warlordAbility(warlord);
+        System.out.println();
         warlord.skill();
         warlord.levelUp();
+        System.out.println();
         info.warlordAbility(warlord);
 
     }
