@@ -7,11 +7,16 @@ public class CharacterInfo extends CharacterAbility {
 
         CharacterInfo info = new CharacterInfo();
 
-        Warlord warlord = new Warlord(50, 10, 10);
+        Warlord warlord = new Warlord(50,10,10);
+
+        warlord.setStr(50);
+        warlord.setDex(10);
+        warlord.setKnowledge(10);
+
         Sorceress sorceress = new Sorceress(10,10,50);
         Archer archer = new Archer(10, 50, 10);
 
-        info.warlordAbility(warlord);
+         info.warlordAbility(warlord);
         System.out.println();
         warlord.skill();
         System.out.println();
