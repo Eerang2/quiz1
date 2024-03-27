@@ -11,9 +11,27 @@ public class Warlord extends CharacterAbility {
         this.str = str;
         this.dex = dex;
         this.knowledge = knowledge;
-
     }
 
+//    @Override
+//    public void setStr(int str) {
+//        this.str = str;
+//    }
+//
+//    @Override
+//    public void setDex(int dex) {
+//        this.dex = dex;
+//    }
+//
+//    @Override
+//    public void setKnowledge(int knowledge) {
+//        this.knowledge = knowledge;
+//    }
+//        public Warlord() {
+//        this.str = 50;
+//        this.dex = 10;
+//        this.knowledge = 10;
+//    }
 
     public void attack() {
         if (getHp() <= 0) {
@@ -41,5 +59,15 @@ public class Warlord extends CharacterAbility {
             System.out.println("str: +5");
             super.setStr(getStr() + 5);
         }
+    }
+
+    public void warlordAbility(Warlord warlord) {
+        System.out.println("힘: " + warlord.getStr());
+        System.out.println("민첩: " + warlord.getDex());
+        System.out.println("지력: " + warlord.getKnowledge());
+        System.out.println("경험치: " + warlord.getExperience());
+        System.out.println("레벨: " + warlord.getLevel());
+        System.out.println("피: " + warlord.getHp());
+        System.out.println("마력: " + warlord.getMp());
     }
 }

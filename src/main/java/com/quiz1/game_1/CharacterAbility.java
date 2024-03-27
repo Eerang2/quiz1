@@ -12,13 +12,14 @@ public class CharacterAbility {
     private int mp = 100;
 
 
-
 //    public CharacterAbility(int level, int experience, int hp, int mp) {
 //        this.level = level;
 //        this.experience = experience;
 //        this.hp = hp;
 //        this.mp = mp;
 //    }
+
+
 
     public int getStr() {
         return str;
@@ -59,7 +60,7 @@ public class CharacterAbility {
     public void setExperience(int experience) {
         this.experience = experience;
 //        System.out.println("경험치: " + experience);
-        if (this.experience >= 100) {
+        if (this.experience > 100) {
             this.level++;
             this.experience = 0;
         }
